@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zachclaude · 独立小站</title>
+<meta name="description" content="三个独立小站：明白（把通知整理成一张办事纸）、绿帐（出口绿色合规与供应商资料）、Zaki（来华留学信息站）。">
+<meta name="theme-color" content="#0E4A37">
+<style>:root{
+  --paper:#f7f3ea;--sheet:#fffdf8;--ink:#1d2b23;--muted:#5c665e;--line:#dfd7c8;
+  --forest:#0E4A37;--leaf:#2C9A68;--clay:#C8402A;
+  --f-display:"Noto Serif SC","Source Han Serif SC","Songti SC",Georgia,serif;
+  --f-body:"Noto Sans SC","Source Han Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1040px,92vw);margin:0 auto}
+header{padding:28px 0 0}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--f-display);font-weight:700;letter-spacing:.02em;font-size:20px;text-decoration:none;color:var(--ink)}
+.brand svg{width:28px;height:28px;flex:none}
+.brand small{font-family:var(--f-body);font-weight:400;font-size:13px;color:var(--muted);letter-spacing:0}
+main{padding:56px 0 72px}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);opacity:.75}
+h1{font-family:var(--f-display);font-size:clamp(34px,5vw,54px);line-height:1.15;letter-spacing:-.01em;margin:14px 0 16px;max-width:18ch;text-wrap:balance}
+.lede{font-size:18px;color:var(--muted);max-width:44em;margin:0 0 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;gap:10px;background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:24px;text-decoration:none;transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s cubic-bezier(.22,1,.36,1),border-color .3s cubic-bezier(.22,1,.36,1)}
+.card:hover{transform:translateY(-2px);border-color:#b9c9bd;box-shadow:0 20px 40px -32px rgba(14,74,55,.5)}
+.card:active{transform:translateY(0)}
+.card:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
+.card .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.card h2{font-family:var(--f-display);font-size:22px;margin:0;letter-spacing:.01em}
+.tag{font-size:11px;letter-spacing:.06em;color:var(--forest);border:1px solid #c9dccf;background:#eef5ef;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.65}
+.card .go{margin-top:auto;font-size:14px;font-weight:600;color:var(--forest);display:inline-flex;align-items:center;gap:8px}
+.card .go svg{transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.card:hover .go svg{transform:translateX(3px)}
+footer{border-top:1px solid var(--line);padding:20px 0 32px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between}
+@media (max-width:640px){main{padding:36px 0 56px}h1{font-size:clamp(30px,9vw,42px)}.card{padding:20px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./"><svg viewBox="0 0 64 72" fill="none" aria-hidden="true"><path d="M32 4C20 16 10 24 10 42a22 22 0 0 0 44 0C54 24 44 16 32 4Z" fill="#0E4A37"/><path d="M32 22v28M22 34l10-6 10 6" stroke="#E4F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Zachclaude <small>独立小站</small></a></div></header>
+<main class="wrap">
+  <p class="eyebrow">Three small, self-contained sites</p>
+  <h1>三个小站，都是自己和身边人用得上的工具。</h1>
+  <p class="lede">没有账号体系，没有追踪脚本。页面尽量做成单文件，数据尽量留在你自己的浏览器里。</p>
+  <div class="cards">
+    <a class="card" href="/mingbai/">
+      <div class="top"><h2>明白 Mingbai</h2><span class="tag">在线</span></div>
+      <p>把社保、医保、养老金的通知，整理成一张能打印、能带走的办事纸。有中英双语、大字和朗读。</p>
+      <span class="go">进入明白 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="card" href="/greenledger/">
+      <div class="top"><h2>绿帐 Qingdan</h2><span class="tag">在线</span></div>
+      <p>中小出口工厂的绿色合规工作台：CBAM、EUDR 等法规、订单风险自测、碳数据计算与供应商资料跟进。</p>
+      <span class="go">进入绿帐 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="card" href="https://zaki-study-china-review.silkygoat2.chatgpt.site/" target="_blank" rel="noopener">
+      <div class="top"><h2>Zaki</h2><span class="tag">独立托管</span></div>
+      <p>来华留学信息站：学校、专业、学费与申请路线的公开资料整理，每条结论标注来源。</p>
+      <span class="go">打开 Zaki <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+</main>
+<footer><div class="wrap"><span>© 2026 Zachclaude</span><span>无追踪 · 手动维护 · 信息以官方为准</span></div></footer>
+</body>
+</html>
